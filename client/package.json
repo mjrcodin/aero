@@ -1,0 +1,28 @@
+{
+  "name": "uss-aeronyde-client",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:3001/",
+  "dependencies": {
+    "@mapbox/mapbox-gl-draw": "^1.0.9",
+    "@mapbox/mapbox-gl-geocoder": "^2.3.0",
+    "@material-ui/core": "^1.4.2",
+    "@turf/turf": "^5.1.6",
+    "axios": "^0.18.0",
+    "mapbox-gl": "^0.47.0",
+    "material-ui-pickers": "^1.0.0-rc.12",
+    "materialize-css": "^1.0.0-rc.2",
+    "moment": "^2.22.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "spectre.css": "^0.5.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

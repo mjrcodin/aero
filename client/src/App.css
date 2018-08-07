@@ -1,0 +1,77 @@
+/* 
+Color theme:
+Aeronyde blue: #303e82
+accent blue: #3c4da3
+gray: #6c757d (same as Bootstrap's "secondary" color) */
+
+a {
+  color: #ffffff !important;
+}
+a:visited {
+  color: #ffffff !important;
+}
+.App {
+  text-align: center;
+}
+.App-logo {
+ margin-top: 20vh;
+}
+.App-title {
+  font-size: 1.5em;
+  font-family: 'Titillium Web', sans-serif;
+}
+.App-intro {
+  font-size: large;
+}
+.btn-primary {
+  background-color: #303e82 !important;
+  border-color: #3c4da3 !important;
+}
+.btn-primary:hover {
+  background-color: #3c4da3 !important;
+}
+.defaultText {
+  font-family: 'Titillium Web', sans-serif;
+}
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+.fade-in-slower {
+  opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 4s;
+}
+.form-inline {
+  width: 100%;
+}
+.form-inline .form-control {
+  width: 100%;
+}
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.nav-item .nav-link {
+  color: #ffffff;
+}
+.navbar {
+  color: #ffffff;
+  width: 100%;
+}
+.navbarLogo {
+  height: 50px;
+}
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
