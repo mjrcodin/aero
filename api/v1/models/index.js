@@ -6,6 +6,9 @@ const env = process.env.NODE_ENV || 'development'
 const config = require(path.join(__dirname, '..','..','..', 'config/config.json'))[env]
 const db = {}
 
+let Database = process.env.SEQUEL_DB || config.database
+let userName = process.env.SEQUEL_USERNAME || config.username
+let Database = process.env.SEQUEL_PASSWORD || config.password
 // TODO - Update for JawsDB on deployment
 let sequelize = new Sequelize(config.database, config.username, config.password, config)
 
