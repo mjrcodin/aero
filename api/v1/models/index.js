@@ -5,12 +5,12 @@ const basename = path.basename(module.filename)
 const env = process.env.NODE_ENV || 'development'
 const config = require(path.join(__dirname, '..','..','..', 'config/config.json'))[env]
 const db = {}
-
+let sequelize; 
 // TODO - Update for JawsDB on deployment
 if (process.env.NODE_ENV=='production' && process.env.JAWSDB_URL) {
-  let sequelize = new Sequelize(process.env.JAWSDB_URL)
+  sequelize = new Sequelize(process.env.JAWSDB_URL)
 } else {
-  let sequelize = new Sequelize(config.database, config.username, config.password, config)
+  sequelize = new Sequelize(config.database, config.username, config.password, config)
 }
 
 
