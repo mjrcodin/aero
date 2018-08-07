@@ -10,7 +10,7 @@ aero-laanc
 7. Use `npm start` to run the project
 
 ## Unit Testing
-Tests are setup to use Mocha with the Chai assertion library. Tests are located in the ./test directory. 
+Tests are setupp to use Mocha with the Chai assertion library. Tests are located in the ./test directory. 
 ```bash
 #run mocha tests in ./test directory
 $ npm test
